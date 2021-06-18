@@ -160,6 +160,9 @@ class Airplane {
    grade(student, subject) {
      return `${student.name} receives a perfect score on ${subject}`;
    }
+   gradeStudents(grade) {
+     grade = Math.random(Math.ceiling() * 100)
+   }
 
  }
   /*
@@ -183,6 +186,7 @@ class Airplane {
         this.previousBackground = attr.previousBackground;
         this.className = attr.className;
         this.favSubjects = attr.favSubjects;
+        this.grade = attr.grade
      }
      listSubjects(favSubjects) {
        return `Loving ${this.favSubjects}!`
